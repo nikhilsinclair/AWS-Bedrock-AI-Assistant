@@ -57,7 +57,7 @@ The bot was trained using a combination of pre-existing datasets and custom data
 ## How to Run
 
 1. Clone the repository to your local machine.
-2. Install the required dependencies using `pip install -r requirements.txt`.
+2. Install the required dependencies.
 3. Run the Streamlit app using `streamlit run chatbot_frontend.py`.
 4. Interact with the chatbot through the provided interface.
 
