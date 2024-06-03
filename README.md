@@ -4,7 +4,6 @@
 
 ![Alt Text](visual.png)
 
-
 ## Overview
 
 This project implements a personal chatbot using AWS Bedrock, integrated with Streamlit for the front-end interface. The chatbot supports multi-modal inputs and outputs, including voice interaction, and incorporates features for image and media handling. Additionally, the chatbot includes analytics and insights capabilities to track user interactions and improve responses over time.
@@ -41,9 +40,19 @@ Streamlit is used to create the interactive front-end interface for the chatbot.
 
 gTTS is utilized for text-to-speech conversion, enabling the chatbot to respond with spoken audio. gTTS provides high-quality, natural-sounding speech synthesis, enhancing the chatbot's voice interaction capabilities.
 
-### Watchdog
+## Prompt Engineering and Training
 
-Watchdog is a Python library used for monitoring file system events. While initially intended for image handling, it was later removed due to complexity. However, it remains a useful tool for monitoring and managing other aspects of the project's file system.
+### Prompt Engineering
+
+Prompt engineering was a crucial part of developing this chatbot. We crafted specific prompts to guide the AI's responses effectively. By designing clear and contextually appropriate prompts, we ensured that the chatbot could handle various user inputs and provide meaningful responses. This involved iterating on prompt designs based on user feedback and performance testing.
+
+### Training the Bot
+
+The bot was trained using a combination of pre-existing datasets and custom data tailored to our specific use cases. We leveraged AWS Bedrock's capabilities to fine-tune the language model, optimizing it for our application. Training involved:
+
+1. **Data Collection**: Aggregating diverse conversational datasets to cover a wide range of topics and contexts.
+2. **Fine-tuning**: Using AWS Bedrock's tools, we fine-tuned the language model to improve its understanding and generation of responses based on our custom prompts.
+3. **Evaluation and Iteration**: Continuously evaluating the chatbot's performance through user interactions and refining the model to enhance accuracy and relevance.
 
 ## How to Run
 
@@ -51,5 +60,4 @@ Watchdog is a Python library used for monitoring file system events. While initi
 2. Install the required dependencies using `pip install -r requirements.txt`.
 3. Run the Streamlit app using `streamlit run chatbot_frontend.py`.
 4. Interact with the chatbot through the provided interface.
-
 
